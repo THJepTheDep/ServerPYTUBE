@@ -1,4 +1,3 @@
-import pytube
 from pytube import YouTube
 import os
 
@@ -26,11 +25,76 @@ if mp3_or_mp4 == "mp3":
 
 elif mp3_or_mp4 == "mp4":
 
-    # download the file
-    stream = yt.streams.first()
-    stream.download()
+    res = input("144p 240p 360p 480p 720p 1080p: ")
 
-    print("")
+    if res == "144p":
+        yt.streams.filter(res="144p").first().download()
 
-    # result of success
-    print(yt.title + " has been successfully downloaded.")
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "240p":
+        yt.streams.filter(res="240p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "360p":
+        yt.streams.filter(res="360p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "480p":
+        yt.streams.filter(res="480p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "720p":
+        yt.streams.filter(res="720p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    # without p
+
+    if res == "144":
+        yt.streams.filter(res="144p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "240":
+        yt.streams.filter(res="240p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "360":
+        yt.streams.filter(res="360p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "480":
+        yt.streams.filter(res="480p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
+
+    elif res == "720":
+        yt.streams.filter(res="720p").first().download()
+
+        print("")
+
+        print(yt.title + " has been successfully downloaded.")
