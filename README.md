@@ -6,14 +6,14 @@
 git clone https://github.com/THJepTheDep/ServerPYTUBE.git
 
 
-# Install the requirements
-
-pip install -r requirements
-
-
 # Open the folder 
 
 cd ServerPYTUBE
+
+
+# Install the requirements
+
+pip install -r requirements
 
 
 # Start the main.py
