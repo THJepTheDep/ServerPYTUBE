@@ -13,7 +13,7 @@ cd ServerPYTUBE
 
 # Install the requirements
 
-pip install -r requirements
+pip install -r requirements.txt
 
 
 # Start the main.py
