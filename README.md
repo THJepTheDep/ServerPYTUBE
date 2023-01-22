@@ -18,6 +18,4 @@ cd ServerPYTUBE
 
 # Start the main.py
 python main.py
-
-
 ''''
